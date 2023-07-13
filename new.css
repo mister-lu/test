@@ -58,3 +58,8 @@ input{
         display: none;
     }
 }
+@media (max-width:10px){
+    .login-wrapper{
+        display: none;
+    }
+}
