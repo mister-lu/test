@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>路雄</title>
+    <style>  
+      body{
+        margin: 0;
+        height: 100vh;
+        background-color:#eee;
+      }
+      .flex{
+        display:flex;
+       
+      }
+      #flex{
+        width:150px;
+        z-index: 2;
+      }
+      .flex1{
+        flex:1; 
+        z-index: 1;
+      }
+      .baise{
+        background-color:white;
+        box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
+      }
+      .bj{margin:5px;}
+      .bj1{margin-right:5px;}
+      .bj2{margin-top:5px;}
+      
+			.column{
+				flex-direction: column;
+			}
+      @media (max-width:1024px){
+        #flex{
+            display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex">
+    
+    <!-- 左边 -->
+    <div id="flex" class="baise">
+      <p>路雄</p>
+    </div>
+    <!-- 右边 -->
+    <div class="flex1 flex column" >
+      <!-- 上边 -->
+      <div class="baise" style="height:40px;">
+      </div>
+      <!-- 下边 -->
+      <div class="flex flex1" style="overflow: auto ;">
+        <!-- 左边 -->
+          <div style="flex:3;" class="bj">
+            <div class="flex">
+              <div style="height:100px" class="baise flex1 bj1"></div>
+              <div style="height:100px" class="baise flex1 bj1"></div>
+              <div style="height:100px" class="baise flex1 bj1"></div>
+              <div style="height:100px" class="baise flex1"></div>
+            </div>
+            <div>
+              <div class="baise bj2" style="height:200px"></div>
+              <div class="baise bj2" style="height:100px"></div>
+              <div class="baise bj2" style="height:100px"></div>
+              <div class="baise bj2" style="height:100px"></div>
+              <div class="baise bj2" style="height:100px"></div>
+              <div class="baise bj2" style="height:100px"></div>
+            </div>
+          </div>
+          <div style="flex:1">
+            <div class="baise bj2" style="height:150px"></div>
+            <div class="baise bj2" style="height:200px"></div>
+
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
