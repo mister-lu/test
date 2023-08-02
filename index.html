@@ -29,15 +29,31 @@
       .bj{margin:5px;}
       .bj1{margin-right:5px;}
       .bj2{margin-top:5px;}
-      
-			.column{
+      .column{
 				flex-direction: column;
 			}
-      @media (max-width:1024px){
+      @media (max-width:1024px) {
         #flex{
             display: none;
         }
+        .bj{margin:5px;}
+        .bj1{margin-right:5px;}
+        .bj2{margin-top:5px;}
       }
+      @media (max-width:700px){
+        .aa1{
+          display:block;
+        }
+      }
+      
+      @media (max-width:400px){
+        .aa{
+          display:block;
+        }
+        .bj1{margin-right:0px;}
+      }
+      
+
     </style>
   </head>
   <body class="flex">
@@ -47,16 +63,16 @@
       <p>路雄</p>
     </div>
     <!-- 右边 -->
-    <div class="flex1 flex column" >
+    <div class="flex1 flex column " >
       <!-- 上边 -->
       <div class="baise" style="height:40px;">
       </div>
       <!-- 下边 -->
-      <div class="flex flex1" style="overflow: auto ;">
+      <div class="flex flex1 aa1" style="overflow: auto ;">
         <!-- 左边 -->
           <div style="flex:3;" class="bj">
-            <div class="flex">
-              <div style="height:100px" class="baise flex1 bj1"></div>
+            <div class="flex aa" >
+              <div style="height:100px" class="baise flex1 bj1">fsdfsdf</div>
               <div style="height:100px" class="baise flex1 bj1"></div>
               <div style="height:100px" class="baise flex1 bj1"></div>
               <div style="height:100px" class="baise flex1"></div>
